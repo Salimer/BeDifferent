@@ -177,30 +177,32 @@ const productsOFkids = [
 
 
 
-let cartMen = [];
-const containerMen = document.querySelector('.productsOFmen');
+let cart = [];
+const containerMen = document.querySelector('.men-section');
 
 productsOFmen.forEach(item => {
     const div = document.createElement('div');
     div.classList.add('card');
     div.innerHTML = `
     <div class="img"><img src="${item.img}" alt=""> </div>
-    <div class="desc">Men</div>
+    <div class="desc">NEW</div>
     <div class="title">${item.name}</div>
     <div class="box">
         <div class="price">$${item.cost}</div>
-        <button class="btn men">Buy Now</button>
+        <button class="btn men-btns">Buy Now</button>
     </div>
     `;
 
-    container.appendChild(div);
+    containerMen.appendChild(div);
 })
 
-const buttonsMen = document.querySelectorAll('.men');
-buttons.forEach((btn, index) => {
+const buttonsMen = document.querySelectorAll('.men-btns');
+buttonsMen.forEach((btn, index) => {
     btn.addEventListener('click', () => {
         cart.push(productsOFmen[index]);
         console.log(cart);
+        sessionStorage.setItem('cart', JSON.stringify(cart));
+        alert('Item added to cart');
     })
 })
 
@@ -210,33 +212,31 @@ buttons.forEach((btn, index) => {
 
 
 
-
-
-
-let cartWomen = [];
-const containerWomen = document.querySelector('.productsOFwomen');
+const containerWomen = document.querySelector('.women-section');
 
 productsOFwomen.forEach(item => {
     const div = document.createElement('div');
     div.classList.add('card');
     div.innerHTML = `
     <div class="img"><img src="${item.img}" alt=""> </div>
-    <div class="desc">Men</div>
+    <div class="desc">NEW</div>
     <div class="title">${item.name}</div>
     <div class="box">
         <div class="price">$${item.cost}</div>
-        <button class="btn women">Buy Now</button>
+        <button class="btn women-btns">Buy Now</button>
     </div>
     `;
 
-    container.appendChild(div);
+    containerWomen.appendChild(div);
 })
 
-const buttonsWomen = document.querySelectorAll('.women');
-buttons.forEach((btn, index) => {
+const buttonsWomen = document.querySelectorAll('.women-btns');
+buttonsWomen.forEach((btn, index) => {
     btn.addEventListener('click', () => {
         cart.push(productsOFwomen[index]);
         console.log(cart);
+        sessionStorage.setItem('cart', JSON.stringify(cart));
+        alert('Item added to cart');
     })
 })
 
@@ -247,35 +247,31 @@ buttons.forEach((btn, index) => {
 
 
 
-
-let cartKids = [];
-const containerKids = document.querySelector('.productsOFkids');
-
+const containerKids = document.querySelector('.kids-section');
 productsOFkids.forEach(item => {
     const div = document.createElement('div');
     div.classList.add('card');
     div.innerHTML = `
     <div class="img"><img src="${item.img}" alt=""> </div>
-    <div class="desc">Men</div>
+    <div class="desc">NEW</div>
     <div class="title">${item.name}</div>
     <div class="box">
         <div class="price">$${item.cost}</div>
-        <button class="btn women">Buy Now</button>
+        <button class="btn kids-btns">Buy Now</button>
     </div>
     `;
 
-    container.appendChild(div);
+    containerKids.appendChild(div);
 })
 
-const buttonsKids = document.querySelectorAll('.kids');
-buttons.forEach((btn, index) => {
+const buttonsKids = document.querySelectorAll('.kids-btns');
+buttonsKids.forEach((btn, index) => {
     btn.addEventListener('click', () => {
         cart.push(productsOFkids[index]);
         console.log(cart);
+        sessionStorage.setItem('cart', JSON.stringify(cart));
+        alert('Item added to cart');
     })
 })
-
-
-
 
 
