@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/formstyle.css">
+</head>
+<body>
+    <div class="header">
+        <img id="logo" src="items/logo.jpeg">
+        <div class="nav">
+         <span> <a href="page1.html">Main</a></span>  
+         <span><a href="product Item.html">Product</a></span>   
+         <span> <a href="#Cart">Cart</a></span>  
+         <span> <a href="form.html">Form</a></span>  
+         <span> <a href="countact.html">Contact Us</a> </span> 
+        </div>
+    </div>
+       
+    
+    <div class="tt">
+        
+        <table class="table">
+        <caption>List of products</caption>
+        <tr class="first">
+            <th>Items</th>
+            <th>properties</th>
+            <th>Nunber of Items</th>
+            <th>Cost($)</th>
+        </tr>
+        <tr>
+            <td>srt</td>
+            <td><form>
+                <input type="radio" name="a" value="property1" checked>
+                <label>l-price(200$)</label><br>
+                <input type="radio" name="a" value="property2" >
+                <label>M-price(180$)</label><br>
+                <input type="radio" name="a" value="property3" >
+                <label>S-price(160$)</label><br>
+            </form></td>
+            <td><select class="select">
+                
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+
+            </select></td>
+            <td>srt</td>
+            
+        </tr>
+        <tr>
+            <td>srt</td>
+            <td><form>
+                <input type="radio" name="a" value="property1" checked>
+                <label>l-price(200$)</label><br>
+                <input type="radio" name="a" value="property2" >
+                <label>M-price(180$)</label><br>
+                <input type="radio" name="a" value="property3" >
+                <label>S-price(160$)</label><br>
+            </form></td>
+            <td><select>
+                
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+
+        </select></td>
+            <td>srt</td>
+            
+        </tr>
+        <tr>
+            <td>srt</td>
+            <td><form>
+                <input type="radio" name="a" value="property1" checked>
+                <label>l-price(200$)</label><br>
+                <input type="radio" name="a" value="property2" >
+                <label>M-price(180$)</label><br>
+                <input type="radio" name="a" value="property3" >
+                <label>S-price(160$)</label><br>
+            </form></td>
+            <td><select aria-placeholder="unit">
+                
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            
+        </select></td>
+            <td>srt</td>
+            
+        </tr>
+        <tr>
+            <td>srt</td>
+            <td><form>
+                <input type="radio" name="a" value="property1" checked>
+                <label>l-price(200$)</label><br>
+                <input type="radio" name="a" value="property2" >
+                <label>M-price(180$)</label><br>
+                <input type="radio" name="a" value="property3" >
+                <label>S-price(160$)</label><br>
+            </form></td>
+            <td><select>
+                
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+
+        </select></td>
+            <td>srt</td>
+            
+        </tr>
+        <tr>
+            <th colspan="2">Total cost</th>
+            <td><input type="submit" value="Calculate"></td>
+            <td>srt</td>
+            
+        </tr>
+    </table>
+</div>
+    
+</body>
+</html>
