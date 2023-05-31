@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0;
+    
+}
+body{
+    background-color: #e8f6f6;
+}
+
+.header {
+    background-color: #319ac7;
+    width: 100%;
+    position: fixed;
+    z-index:999;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+#logo {
+    width: 7%;
+    padding-bottom: 5px;
+
+
+}
+.nav{
+display: inline;    
+padding: 10px 10px;
+float: right;
+
+}
+.nav a:hover{
+    color: rgb(19, 19, 19);
+}
+span a {
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:rgb(245, 248, 248);
+    font-weight: 700;
+
+    
+}
+.home{
+    float: right;
+    width: 20%;
+    
+   
+    margin-top: -200px;
+    padding-right: 400px;
+
+}
+.welcome{
+    padding-top: 250px;
+    padding-left: 220px;
+    font-weight:900;
+    font-size:x-large;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+.help{
+    padding-left:250px ;
+}
+.About{
+    padding-left:100px;
+    font-weight: 800px;
+    padding-bottom: 30px;
+     
+ 
+    
+}
+.Aboutus{
+    padding-left:100px;
+    font-weight: 800px; 
+    font-size: 20PX;
+    padding-bottom: 100px;
+    
+
+}
+.products {
+    padding-left:140px;
+    font-weight: 800px; 
+    padding-bottom: 100px;
+    font-size: 20PX;
+    
+}
+.none{
+    text-decoration: none;
+    color: black;
+}
+.none:hover{
+    color: rgb(115, 163, 222);
+}
+.service{
+    padding-left:140px;
+    font-weight:800PX; 
+    font-size: 20PX;
+    padding-bottom: 100px;
+
+}
