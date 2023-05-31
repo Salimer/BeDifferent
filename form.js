@@ -71,5 +71,17 @@ calculateBtn.addEventListener('click', () => {
     total = total * 1.15;
   }
 
+  let ask=confirm("The total cost is $" + total + ". Do you accept this amount for payment?","");
+	
+	if(ask==true )
+	{
+		alert("thank you");
+	}
+	
+	else if(ask==false)
+	{
+		alert("application withdraw");
+	}
+  
   totalCost.textContent = `$${total}`;
 });
